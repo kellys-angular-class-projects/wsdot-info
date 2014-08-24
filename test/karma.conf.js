@@ -43,10 +43,15 @@ module.exports = function(config) {
       'PhantomJS'
     ],
 
+    preprocessors: {
+      'src/*.js' : ['coverage']
+    },
+
     // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-coverage'
     ],
 
     // Continuous Integration mode
